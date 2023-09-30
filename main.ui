@@ -1,0 +1,935 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>651</width>
+    <height>527</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Bank</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">*{
+border:none;
+background-color:transparent;
+}
+#centralwidget{
+background-color:#040f13;
+}
+#sidemenu{
+background-color:#701e26;
+border-radius:20px;
+}
+Qpushbutton{
+padding:10px;
+background-color:#040f13;
+border-radius:5px;
+}
+#mainbody{
+background-color:#071e26;
+border-radius:10px;
+}</string>
+   </property>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>621</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QFrame" name="frame_3">
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>20</y>
+          <width>91</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+padding:10px;
+background-color: rgb(0, 0, 0);
+border-radius:5px;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>C:/Users/admin/Downloads/man.png</normaloff>C:/Users/admin/Downloads/man.png</iconset>
+        </property>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QFrame" name="frame_6">
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>20</y>
+          <width>103</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+padding:10px;
+background-color: rgb(0, 0, 0);
+border-radius:5px;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>C:/Users/admin/Downloads/transaction.png</normaloff>C:/Users/admin/Downloads/transaction.png</iconset>
+        </property>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QFrame" name="frame_5">
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QPushButton" name="pushButton_5">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>124</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+padding:10px;
+background-color: rgb(0, 0, 0);
+border-radius:5px;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>icons/cogwheels.png</normaloff>icons/cogwheels.png</iconset>
+        </property>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <pointsize>27</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>C:/Users/admin/Downloads/bank (2).png</pixmap>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="font">
+        <font>
+         <pointsize>19</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Bank</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QFrame" name="frame_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>100</y>
+      <width>631</width>
+      <height>381</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QStackedWidget" name="stackedWidget">
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:2px;
+background-color:#071e26;</string>
+       </property>
+       <property name="currentIndex">
+        <number>6</number>
+       </property>
+       <widget class="QWidget" name="profile">
+        <property name="styleSheet">
+         <string notr="true">#mainbody{
+background-color:#071e26;
+border-radius:10px;
+}</string>
+        </property>
+        <widget class="QLabel" name="name">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>211</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Welcome Ram Prasad</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_1">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>120</y>
+           <width>171</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Current Balance:</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_7">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>60</y>
+           <width>91</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Bank Id:</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="balance">
+         <property name="geometry">
+          <rect>
+           <x>190</x>
+           <y>120</y>
+           <width>181</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(28, 121, 152);
+border-radius:10px
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="bank_id">
+         <property name="geometry">
+          <rect>
+           <x>190</x>
+           <y>60</y>
+           <width>181</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(28, 121, 152);
+border-radius:10px
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="withdraw_2">
+         <property name="geometry">
+          <rect>
+           <x>230</x>
+           <y>220</y>
+           <width>131</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+padding:10px;
+background-color: rgb(0, 0, 0);
+color:rgb(7, 30, 38);
+border-radius:5px;
+}</string>
+         </property>
+         <property name="text">
+          <string>Withdraw</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="deposit">
+         <property name="geometry">
+          <rect>
+           <x>230</x>
+           <y>300</y>
+           <width>131</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+padding:10px;
+background-color: rgb(0, 0, 0);
+color:rgb(7, 30, 38);
+border-radius:5px;
+}</string>
+         </property>
+         <property name="text">
+          <string>Deposite</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="deposite_page">
+        <widget class="QLabel" name="d_amount">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>70</y>
+           <width>111</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Enter Amount</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="d_pin">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>130</y>
+           <width>101</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Enter Pin</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="confirm">
+         <property name="geometry">
+          <rect>
+           <x>240</x>
+           <y>260</y>
+           <width>111</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+padding:10px;
+background-color: rgb(0, 0, 0);
+color:rgb(7, 30, 38);
+border-radius:5px;
+}</string>
+         </property>
+         <property name="text">
+          <string>Confirm</string>
+         </property>
+         <property name="shortcut">
+          <string>Return</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit">
+         <property name="geometry">
+          <rect>
+           <x>170</x>
+           <y>70</y>
+           <width>201</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(28, 121, 152);
+border-radius:10px
+</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_2">
+         <property name="geometry">
+          <rect>
+           <x>170</x>
+           <y>130</y>
+           <width>201</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(28, 121, 152);
+border-radius:10px
+</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="withdraw_page">
+        <widget class="QPushButton" name="confirm_2">
+         <property name="geometry">
+          <rect>
+           <x>240</x>
+           <y>260</y>
+           <width>111</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+padding:10px;
+background-color: rgb(0, 0, 0);
+color:rgb(7, 30, 38);
+border-radius:5px;
+}</string>
+         </property>
+         <property name="text">
+          <string>Confirm</string>
+         </property>
+         <property name="shortcut">
+          <string>Return</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_3">
+         <property name="geometry">
+          <rect>
+           <x>170</x>
+           <y>130</y>
+           <width>201</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(28, 121, 152);
+border-radius:10px
+</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="w_pin">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>130</y>
+           <width>101</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Enter Pin</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="w_amount">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>70</y>
+           <width>111</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Enter amount</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_4">
+         <property name="geometry">
+          <rect>
+           <x>170</x>
+           <y>70</y>
+           <width>201</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(28, 121, 152);
+border-radius:10px
+</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="transfer">
+        <property name="styleSheet">
+         <string notr="true">#mainbody{
+background-color:#071e26;
+border-radius:10px;
+}</string>
+        </property>
+        <widget class="QLineEdit" name="lineEdit_6">
+         <property name="geometry">
+          <rect>
+           <x>200</x>
+           <y>60</y>
+           <width>201</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(28, 121, 152);
+border-radius:10px
+</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="placeholderText">
+          <string>Enter Bank Id</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_9">
+         <property name="geometry">
+          <rect>
+           <x>200</x>
+           <y>220</y>
+           <width>201</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(28, 121, 152);
+border-radius:10px
+</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="placeholderText">
+          <string>Enter Pin</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_10">
+         <property name="geometry">
+          <rect>
+           <x>200</x>
+           <y>140</y>
+           <width>201</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(28, 121, 152);
+border-radius:10px
+</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="placeholderText">
+          <string>Enter Amount</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton">
+         <property name="geometry">
+          <rect>
+           <x>260</x>
+           <y>310</y>
+           <width>101</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>13</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+padding:10px;
+background-color: rgb(0, 0, 0);
+color:rgb(7, 30, 38);
+border-radius:5px;
+}</string>
+         </property>
+         <property name="text">
+          <string>Transfer</string>
+         </property>
+         <property name="shortcut">
+          <string>Return</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="widget">
+        <property name="styleSheet">
+         <string notr="true">#mainbody{
+background-color:#071e26;
+border-radius:10px;
+}</string>
+        </property>
+       </widget>
+       <widget class="QWidget" name="setting">
+        <property name="styleSheet">
+         <string notr="true">#mainbody{
+background-color:#071e26;
+border-radius:10px;
+}</string>
+        </property>
+        <widget class="QPushButton" name="log_out">
+         <property name="geometry">
+          <rect>
+           <x>240</x>
+           <y>240</y>
+           <width>131</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+padding:10px;
+background-color: rgb(0, 0, 0);
+color:rgb(7, 30, 38);
+border-radius:5px;
+}</string>
+         </property>
+         <property name="text">
+          <string>Log Out</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="switch_2">
+         <property name="geometry">
+          <rect>
+           <x>210</x>
+           <y>150</y>
+           <width>191</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+padding:10px;
+background-color: rgb(0, 0, 0);
+color:rgb(7, 30, 38);
+border-radius:5px;
+}</string>
+         </property>
+         <property name="text">
+          <string>Switch Account</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="reset">
+         <property name="geometry">
+          <rect>
+           <x>240</x>
+           <y>60</y>
+           <width>131</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+padding:10px;
+background-color: rgb(0, 0, 0);
+color:rgb(7, 30, 38);
+border-radius:5px;
+}</string>
+         </property>
+         <property name="text">
+          <string>Reset Pin</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="reset_page">
+        <widget class="QLineEdit" name="lineEdit_5">
+         <property name="geometry">
+          <rect>
+           <x>210</x>
+           <y>90</y>
+           <width>221</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(28, 121, 152);
+border-radius:10px
+</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="placeholderText">
+          <string>Enter New Pin</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="confirm_3">
+         <property name="geometry">
+          <rect>
+           <x>270</x>
+           <y>240</y>
+           <width>101</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+padding:10px;
+background-color: rgb(0, 0, 0);
+color:rgb(7, 30, 38);
+border-radius:5px;
+}</string>
+         </property>
+         <property name="text">
+          <string>Confirm</string>
+         </property>
+         <property name="shortcut">
+          <string>Return</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>651</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

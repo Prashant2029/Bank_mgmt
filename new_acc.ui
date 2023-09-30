@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>404</width>
+    <height>493</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(170, 170, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="create_new">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>340</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">create_new {
+    padding: 10px 50px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: transparent;
+    position: relative;
+}
+
+create_new::after {
+    padding: 10px 50px;
+    font-size: 20px;
+    content: 'GLITCH';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    --move1: inset(50% 50% 50% 50%);
+    --move2: inset(31% 0 40% 0);
+    --move3: inset(39% 0 15% 0);
+    --move4: inset(45% 0 40% 0);
+    --move5: inset(45% 0 6% 0);
+    --move6: inset(14% 0 61% 0);
+    clip-path: var(--move1);
+    -webkit-clip-path: var(--move1);
+}
+
+create_new:hover::after {
+    -webkit-animation: glitch_4011 1s;
+    animation: glitch_4011 1s;
+    text-shadow: 10px 10px 10px black;
+    -webkit-animation-timing-function: steps(2, end);
+    animation-timing-function: steps(2, end);
+    text-shadow: -3px -3px 0px #1df2f0, 3px 3px 0px #E94BE8;
+    background-color: transparent;
+    border: 3px solid rgb(0, 255, 213);
+}
+
+create_new:hover {
+    text-shadow: -1px -1px 0px #1df2f0, 1px 1px 0px #E94BE8;
+    background-color: transparent;
+    border: 1px solid rgb(0, 255, 213);
+    -webkit-box-shadow: 0px 10px 10px -10px rgb(0, 255, 213);
+    box-shadow: 0px 10px 10px -10px rgb(0, 255, 213);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Create</string>
+    </property>
+    <property name="shortcut">
+     <string>Return</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="new_name">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>80</y>
+      <width>231</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">  background-color: #5e7eb6;
+  color: white;
+  font-size: medium;
+  box-shadow: 2px 4px 8px rgba(70, 70, 70, 0.178);</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="placeholderText">
+     <string>Enter your name</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="new_id">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>150</y>
+      <width>231</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">  background-color: #5e7eb6;
+  color: white;
+  font-size: medium;
+  box-shadow: 2px 4px 8px rgba(70, 70, 70, 0.178);</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="placeholderText">
+     <string>Enter new id</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="new_pin">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>220</y>
+      <width>231</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">  background-color: #5e7eb6;
+  color: white;
+  font-size: medium;
+  box-shadow: 2px 4px 8px rgba(70, 70, 70, 0.178);</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="placeholderText">
+     <string>Enter new pin</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="home">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">create_new {
+    padding: 10px 50px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: transparent;
+    position: relative;
+}
+
+create_new::after {
+    padding: 10px 50px;
+    font-size: 20px;
+    content: 'GLITCH';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    --move1: inset(50% 50% 50% 50%);
+    --move2: inset(31% 0 40% 0);
+    --move3: inset(39% 0 15% 0);
+    --move4: inset(45% 0 40% 0);
+    --move5: inset(45% 0 6% 0);
+    --move6: inset(14% 0 61% 0);
+    clip-path: var(--move1);
+    -webkit-clip-path: var(--move1);
+}
+
+create_new:hover::after {
+    -webkit-animation: glitch_4011 1s;
+    animation: glitch_4011 1s;
+    text-shadow: 10px 10px 10px black;
+    -webkit-animation-timing-function: steps(2, end);
+    animation-timing-function: steps(2, end);
+    text-shadow: -3px -3px 0px #1df2f0, 3px 3px 0px #E94BE8;
+    background-color: transparent;
+    border: 3px solid rgb(0, 255, 213);
+}
+
+create_new:hover {
+    text-shadow: -1px -1px 0px #1df2f0, 1px 1px 0px #E94BE8;
+    background-color: transparent;
+    border: 1px solid rgb(0, 255, 213);
+    -webkit-box-shadow: 0px 10px 10px -10px rgb(0, 255, 213);
+    box-shadow: 0px 10px 10px -10px rgb(0, 255, 213);
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>Home</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>404</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
